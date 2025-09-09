@@ -11,12 +11,59 @@
 
     <!-- taiwind + daisyui -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- fontawsome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- css -->
+ <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    
-<h1>call</h1>
 
+    <!-- navbar -->
+    <header>
+     <div class="navbar bg-base-100 shadow-sm bg-green-800 lg:px-10">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a>About</a></li>
+        <li>
+          <a>Gallery</a>
+           </li>
+        <li><a>Plant a Tree</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost text-xl text-white">Green Earth</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 text-white">
+      <li><a>About</a></li>
+      <li>
+      <a>Gallery</a>
+        </li>
+      <li><a>Plant a Tree</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a class="bg-[#facc15] py-2 px-5 rounded-3xl text-green-700">Plant a Tree</a>
+  </div>
+</div>
+    </header>
+
+<!-- banner -->
+ <section class="img bg-[#CFF0DC] h-[385px] lg:bg-[url(/assets/hero-leaf1.png),url(/assets/hero-leaf2.png)] bg-no-repeat ">
+<div class=" text-center items-center space-y-4 pt-20 ">
+    <h1 class="font-medium text-4xl">Plant a Tree, Grow a Future</h1>
+    <p>Join our mission to plant 1 million trees and make the Earth greener for future <br> generations.</p>
+    <button class="bg-[#facc15] py-2 px-5 rounded-3xl text-green-700"> Get Involved</button>
+</div>
+ </section>
 
 
     <script src="function.js"></script>
