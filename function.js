@@ -81,18 +81,32 @@ const elements = document.createElement("p");
 elements.textContent =`$${price}`;
 
 creatDiv.style.backgroundColor="#d7dad81a"
-creatDiv.style.margin ="10px"
+creatDiv.style.margin ="4px"
 creatDiv.style.borderRadius ="7px"
 creatDiv.style.padding ="20px"
 
 
+const remove = document.createElement("button");
+remove.textContent = "x";
+remove.style.color ="red";
+remove.style.fontSize ="30px"
+remove.style.fontWeight = "800px"
+remove.style.marginLeft ="80px"
+
+
+remove.onclick = () =>{
+    cartList.removeChild(creatDiv);
+    total -= price;
+takeTotal();
+}
 
 creatDiv.appendChild(element);
 creatDiv.appendChild(elements);
-
+creatDiv.appendChild(remove)
 
 cartList.appendChild(creatDiv);
-total += price;
+
+  total += price;
 takeTotal();
 
 }
@@ -101,33 +115,3 @@ function takeTotal(){
     document.getElementById("totalPrice").innerText = total.toFixed(2);
 }
  
-// const time = document.createElement("p");
-// const runnigTime = new Date ();
-// const setTime = runnigTime.toLocaleTimeString();
-// time.textContent = setTime;
- 
-
-// creatDiv.style.backgroundColor="#d7dad81a"
-// creatDiv.style.margin ="10px"
-// creatDiv.style.borderRadius ="7px"
-// creatDiv.style.padding ="20px"
-// time.style.textAlign = "end"
-
-
-// creatDiv.appendChild(element);
-// creatDiv.appendChild(elements);
-// creatDiv.appendChild(time);
-
-// callList.appendChild(creatDiv);
-
-
-
-
-
- 
-
-// function clearHistory(){
-//      const freshHistory = document.getElementById("callHistory");
-//     freshHistory.innerHTML = " ";
-
-// }
